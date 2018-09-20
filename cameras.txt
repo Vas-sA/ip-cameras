@@ -1,0 +1,78 @@
+logs of cameras scan here
+
+
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2018-09-21 01:23 EEST
+Nmap scan report for 87-100-137-167.bb.dnainternet.fi (87.100.137.167)
+Host is up (0.071s latency).
+Not shown: 987 closed ports
+PORT     STATE    SERVICE      VERSION
+23/tcp   filtered telnet
+80/tcp   open     http         TP-LINK TD-W8968 http admin
+|_http-title: 403 Forbidden
+81/tcp   open     http         Boa 0.94.13
+|_http-server-header: Boa/0.94.13
+|_http-title: Site doesn't have a title (text/html).
+82/tcp   open     http         ReeCam IP Camera httpd
+|_http-server-header: ReeCam IP Camera
+|_http-title: Site doesn't have a title (text/html).
+83/tcp   open     http         Airlink 101 or TRENDnet TVIP-422w webcam http config
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=Netcam
+|_http-title: Site doesn't have a title (text/html).
+84/tcp   open     http         TRENDnet TV-IP100 or TV-IP110 webcam display httpd
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=netcam
+|_http-title: Site doesn't have a title (text/html).
+85/tcp   open     http         Boa 0.94.13
+|_http-server-header: Boa/0.94.13
+|_http-title: Site doesn't have a title (text/html).
+88/tcp   filtered kerberos-sec
+89/tcp   filtered su-mit-tg
+90/tcp   filtered dnsix
+179/tcp  filtered bgp
+1900/tcp open     upnp
+| fingerprint-strings: 
+|   FourOhFourRequest, GetRequest: 
+|     HTTP/1.0 404 Not Found
+|     SERVER: ipos/7.0 UPnP/1.0 ADSL2+ Modem Router TD-8840T/4.0
+|     CONTENT-LENGTH: 48
+|     CONTENT-TYPE: text/html
+|     <html><body><h1>404 Not Found</h1></body></html>
+|   HTTPOptions: 
+|     HTTP/1.0 501 Not Implemented
+|     SERVER: ipos/7.0 UPnP/1.0 ADSL2+ Modem Router TD-8840T/4.0
+|     CONTENT-LENGTH: 54
+|     CONTENT-TYPE: text/html
+|     <html><body><h1>501 Not Implemented</h1></body></html>
+|   RPCCheck: 
+|     HTTP/0.0 400 Bad Request
+|     SERVER: ipos/7.0 UPnP/1.0 ADSL2+ Modem Router TD-8840T/4.0
+|     CONTENT-LENGTH: 50
+|     CONTENT-TYPE: text/html
+|_    <html><body><h1>400 Bad Request</h1></body></html>
+2000/tcp filtered cisco-sccp
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1900-TCP:V=7.60%I=7%D=9/21%Time=5BA41E04%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,B4,"HTTP/1\.0\x20404\x20Not\x20Found\r\nSERVER:\x20ipos/7\.0\x
+SF:20\x20UPnP/1\.0\x20ADSL2\+\x20Modem\x20Router\x20TD-8840T/4\.0\r\nCONTE
+SF:NT-LENGTH:\x2048\r\nCONTENT-TYPE:\x20text/html\r\n\r\n<html><body><h1>4
+SF:04\x20Not\x20Found</h1></body></html>")%r(HTTPOptions,C0,"HTTP/1\.0\x20
+SF:501\x20Not\x20Implemented\r\nSERVER:\x20ipos/7\.0\x20\x20UPnP/1\.0\x20A
+SF:DSL2\+\x20Modem\x20Router\x20TD-8840T/4\.0\r\nCONTENT-LENGTH:\x2054\r\n
+SF:CONTENT-TYPE:\x20text/html\r\n\r\n<html><body><h1>501\x20Not\x20Impleme
+SF:nted</h1></body></html>")%r(RPCCheck,B8,"HTTP/0\.0\x20400\x20Bad\x20Req
+SF:uest\r\nSERVER:\x20ipos/7\.0\x20\x20UPnP/1\.0\x20ADSL2\+\x20Modem\x20Ro
+SF:uter\x20TD-8840T/4\.0\r\nCONTENT-LENGTH:\x2050\r\nCONTENT-TYPE:\x20text
+SF:/html\r\n\r\n<html><body><h1>400\x20Bad\x20Request</h1></body></html>")
+SF:%r(FourOhFourRequest,B4,"HTTP/1\.0\x20404\x20Not\x20Found\r\nSERVER:\x2
+SF:0ipos/7\.0\x20\x20UPnP/1\.0\x20ADSL2\+\x20Modem\x20Router\x20TD-8840T/4
+SF:\.0\r\nCONTENT-LENGTH:\x2048\r\nCONTENT-TYPE:\x20text/html\r\n\r\n<html
+SF:><body><h1>404\x20Not\x20Found</h1></body></html>");
+Service Info: Devices: WAP, webcam; CPE: cpe:/h:tp-link:td-w8968, cpe:/h:trendnet:tvip-422w, cpe:/h:trendnet:tv-ip110
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 65.87 seconds
+
