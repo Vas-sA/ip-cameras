@@ -19,6 +19,6 @@ usage:
   
   w8... 
   
-  check output in command line or in the end of cameras file, where 
+  check output in command line or in the end of cameras file, where script storing results
   
   
